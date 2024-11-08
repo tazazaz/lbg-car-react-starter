@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json .
 
 # download the project dependencies
-RUN npm install
+RUN npm install --force
 
 # copy everything from the react app folder to the /app folder in the container
 COPY . .
